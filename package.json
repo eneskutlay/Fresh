@@ -1,0 +1,22 @@
+{
+  "name": "fresh-todo",
+  "version": "1.0.0",
+  "description": "Fresh Todo App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eneskt/Fresh.git"
+  },
+  "author": "Enes Kutlay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eneskt/Fresh.git/issues"
+  },
+  "homepage": "https://github.com/eneskt/Fresh.git#readme",
+  "devDependencies": {
+    "electron": "^11.0.3"
+  }
+}
