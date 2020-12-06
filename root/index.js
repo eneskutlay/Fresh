@@ -11,7 +11,7 @@ input.addEventListener("keyup", function (event) {
 
 function addToDo() {
 	var li = document.createElement("li");
-	li.setAttribute("id", "listItem");
+	li.id = "idli"
 	var inputValue = document.getElementById("input").value;
 	var t = document.createTextNode(inputValue);
 	li.appendChild(t);
@@ -23,7 +23,12 @@ function addToDo() {
 	} else if (tagLi.length > 14) {
 		alert("Önce yapılacakları bitir");
 	}
+	li.addEventListener("click", /* finifshTodo */ );
 }
+
+/* not working function finifshTodo() {
+document.querySelectorAll("li").this.style.textDecoration = "line-through";
+} */
 
 function addBtn() {
 	addToDo();
