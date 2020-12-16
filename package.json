@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/eneskt/Fresh.git#readme",
   "devDependencies": {
-    "electron": "^11.0.3"
+    "electron": "^11.1.0"
   }
 }
