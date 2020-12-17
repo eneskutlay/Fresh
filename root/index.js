@@ -1,7 +1,7 @@
 var input = document.getElementById("input");
 var btn = document.getElementById("btn");
 var tagLi = document.getElementsByTagName("li");
-var specialKeys = ["!clear"];
+var specialKeys = "!clean"  //why don't added second variable item
 
 input.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
@@ -21,17 +21,21 @@ function addToDo() {
 
   ///// Actions
   function checkItem() {
-    if (inputValue == "!clear") {
-      alert("itemleri temizle");
-    } else {
-    }
+    if (inputValue == "!clean") {
+      var list = document.getElementById("list");
+      while (list.firstChild) {
+        list.firstChild.remove();
+      }
+    } 
   }
+
   function addItem() {
-    if (tagLi.length <= 13 && inputValue != specialKeys) {
+    if (tagLi.length <= 13 && inputValue != specialKeys[0]) {
       document.getElementById("list").appendChild(li);
       document.getElementById("input").value = "";
     } else {
-      alert("önce yapılacakları bitir");
+      // clean input value for special keys
+      document.getElementById("input").value = "";
     }
   }
 }

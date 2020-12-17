@@ -11,13 +11,13 @@ function createWindow() {
 
 	win.loadFile("index.html");
 
-	/*
+	
   win.setMenuBarVisibility(false);
 
 	win.on("maximize", () => {
 		win.unmaximize();
 	});
-  */
+  
 }
 
 app.whenReady().then(createWindow);
