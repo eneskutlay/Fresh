@@ -5,6 +5,11 @@
 body {
   background-color: #252525;
 }
+
+.main {
+  margin-bottom: 20%;
+}
+
 ul li {
   list-style-type: none;
   color: white;
@@ -17,28 +22,37 @@ ul li {
   cursor: pointer;
 }
 
+.footer {
+  background: #252525;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+}
+
 .footer button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   bottom: 2.7%;
   right: 3%;
   font-size: 2rem;
   color: #5bc0be;
 }
 .footer input {
-  position: absolute;
-  bottom: 4.2%;
   box-sizing: border-box;
   width: 80%;
   border: 1px solid #5bc0be;
   border-radius: 4%;
   font-size: 1rem;
   background-color: transparent;
-  padding: 1% 1% 1% 1%;
   color: white;
   word-wrap: break-word;
+  padding: 1% 1% 1% 1%;
+  margin-bottom: 6%;
+  left: 3%;
 }
 
 .footer button:hover {
