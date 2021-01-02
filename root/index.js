@@ -3,6 +3,7 @@ var btn = document.getElementById("btn");
 var listItems = document.getElementsByClassName("listItems");
 var specialKeys = "!clean"; //why don't added second variable item
 
+
 input.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     event.preventDefault();
@@ -10,6 +11,9 @@ input.addEventListener("keyup", function (event) {
   }
 });
 
+
+
+// how to focus last ıtems ?
 function addToDo() {
   var li = document.createElement("li");
   li.className = "listItems";
@@ -20,6 +24,8 @@ function addToDo() {
   checkItem();
   addItem();
   done();
+  //scroll focusing bottom of the page
+  li.scrollIntoView();
 
   ///// Actions
 
@@ -37,8 +43,8 @@ function addToDo() {
   }
 
   function checkItem() {
+    var list = document.getElementById("list");
     if (inputValue == "!clean") {
-      var list = document.getElementById("list");
       while (list.firstChild) {
         list.firstChild.remove();
       }
@@ -46,15 +52,14 @@ function addToDo() {
   }
 
   function done() {
-    [...listItems].forEach((listItem) =>
-      listItem.addEventListener("click", clickDone)
+    [...listItems].forEach((listItems) =>
+      listItems.addEventListener("click", clickDone)
     );
     function clickDone() {
       this.style.color = "grey";
     }
   }
 }
-
 function addBtn() {
   addToDo();
 }

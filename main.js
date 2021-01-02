@@ -2,6 +2,7 @@ const { app, BrowserWindow } = require("electron");
 
 function createWindow() {
   const win = new BrowserWindow({
+   // why not working icon: __dirname + "Logo.svg",
     width: 350,
     height: 550,
     resizable: false,
